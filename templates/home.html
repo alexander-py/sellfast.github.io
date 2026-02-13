@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Congrats on the Offer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(circle at top, #1f2937, #000)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-gradient-radial text-gray-100 flex items-center justify-center px-6 py-16">
+
+  <div class="max-w-3xl w-full">
+
+    <!-- Header -->
+    <div class="mb-12 text-center">
+      <span class="inline-block mb-4 rounded-full bg-white/10 px-4 py-1 text-sm text-gray-300">
+        for developers selling their first product
+      </span>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight">
+        Congrats on the offer 🎉
+      </h1>
+      <p class="mt-4 text-lg text-gray-300 max-w-xl mx-auto">
+        You shipped. Someone wants to buy it.
+        Now let’s ensure a smooth handover.
+      </p>
+    </div>
+
+    <!-- Main card -->
+    <div class="bg-white/5 backdrop-blur rounded-3xl border border-white/10 shadow-2xl p-8 space-y-10">
+
+      <!-- Timeline -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">What happens next:</h2>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-xl bg-white/5 p-4">
+            <span class="text-sm text-gray-400">Step 1</span>
+            <p class="mt-1">Align with buyer on what is included</p>
+          </div>
+          <div class="rounded-xl bg-white/5 p-4">
+            <span class="text-sm text-gray-400">Step 2</span>
+            <p class="mt-1">Letter of Intent → Due Diligence → Asset Purchase Agreement</p>
+          </div>
+          <div class="rounded-xl bg-white/5 p-4">
+            <span class="text-sm text-gray-400">Step 3</span>
+            <p class="mt-1">Buyer funds Escrow.com</p>
+          </div>
+          <div class="rounded-xl bg-white/5 p-4">
+            <span class="text-sm text-gray-400">Step 4</span>
+            <p class="mt-1">Transfer assets after Escrow confirms</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Checklist -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Handover checklist</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="text-green-400 mt-1">✓</span>
+            <span>Domain transfer (registrar access)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400 mt-1">✓</span>
+            <span>GitHub repo / org ownership</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400 mt-1">✓</span>
+            <span>Database backup or migration</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400 mt-1">✓</span>
+            <span>API keys & secrets documentation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400 mt-1">✓</span>
+            <span>Stripe, socials, third-party tools</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Callout -->
+      <div class="rounded-2xl bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-white/10 p-5 text-sm text-gray-200">
+        Don't stress it. You did it already.
+        Let this checklist keep you out of trouble.
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+        <span class="text-sm text-gray-400">
+          Plain text. No fluff. Built by devs.
+        </span>
+        <a
+          href="{% url 'download_checklist' %}"
+          class="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-black font-semibold hover:bg-gray-200 transition"
+        >
+          Download elaborate checklist
+          <span>↓</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-10 text-center text-xs text-gray-500">
+      You only get one first exit. Ship it clean.
+    </div>
+
+  </div>
+
+</body>
+</html>
