@@ -1,0 +1,31 @@
+EXIT HANDOVER CHECKLIST (FOR DEVELOPERS)
+
+1. ALIGN WITH BUYER
+- Confirm exactly what’s included:
+  - Codebase
+  - Domain
+  - Database
+  - Social accounts
+  - Docs
+  - IP
+
+2. LEGAL
+- Sign LOI
+- Complete due diligence
+- Sign Asset Purchase Agreement (APA)
+
+3. ESCROW
+- Buyer sends funds to Escrow.com
+- Do NOT transfer assets before escrow confirms funds
+
+4. HANDOVER
+- Transfer domain via registrar
+- Add buyer to GitHub org or hand over repo
+- Provide DB backup or migration
+- Rotate and document API keys
+- Transfer third-party tools (Stripe, PostHog, etc.)
+
+5. FINAL
+- Escrow releases funds
+- Confirm buyer has access
+- Celebrate your exit 🎉
